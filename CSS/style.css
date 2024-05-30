@@ -1,0 +1,202 @@
+/* Start Global rules */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Inter:wght@200;300;400;500;600;700;800;900&family=Kalnia:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Small Screen */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End global rules */
+
+/* Start main section */
+.main {
+  width: 100%;
+  height: 95vh;
+  background-color: rgb(48, 46, 46);
+}
+
+.main .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  padding: 15px 0;
+  /* background-color: red; */
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  width: 12%;
+  /* height: 50px; */
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.socials {
+  width: 25%;
+  height: 50px;
+  /* background-color: blue; */
+}
+
+.social-icons {
+  width: 100%;
+  height: 100%;
+  /* background-color: skyblue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+}
+
+.social-icons a {
+  color: white;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #e56f14;
+  color: white;
+  border: 1px solid #e56f14;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.main-content {
+  width: 100%;
+  padding: 30px 0;
+  /* background-color: green; */
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro {
+  width: 50%;
+  padding: 20px;
+  /* background-color: white; */
+  color: white;
+}
+
+.intro .name {
+  font-size: 45px;
+  color:   #e56f14;
+}
+
+.intro .role {
+  font-size: 20px;
+}
+
+.intro .intro-text {
+  margin-top: 20px;
+}
+
+.intro .btn {
+  margin-top: 20px;
+}
+
+.portfolio-pic {
+  width: 40%;
+  /* background-color: red; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic {
+  width: 60%;
+  background-color: white;
+  padding: 0 0 ;
+  position: absolute;
+  z-index: 10;
+  
+}
+
+.pic >img {
+  width: 100%;
+  vertical-align: bottom;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.bg {
+  width: 63%;
+  height: 430px;
+  background-color: #e56f14;
+  transform: rotateZ(-30deg);
+  -webkit-transform: rotateZ(-30deg);
+  -moz-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  -o-transform: rotateZ(-30deg);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* End main section */
